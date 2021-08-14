@@ -7,6 +7,7 @@ const app = express();
 
 // routes
 const registerRoute = require("./route/register.route") //Register
+const branchRoute = require("./route/branch.route") //Register
 const taskRoute = require("./route/task.route"); //Used to get task data
 
 // utilities
@@ -14,8 +15,9 @@ app.use(cors());
 app.use(express.json()); //Json module is used to parse json I guess
 
 // api
-app.use("/api/task", taskRoute); //If using that link, send to task object
+app.use("/api/task", taskRoute); //If using this link, send to task object
 app.use("/api/register", registerRoute); //Send api authentication
+app.use("/api/branch", branchRoute); //Send to branch object
 app.use("*", (req, res) => {
     let result = new response(404, ["Not Found"]);
     res.status(result.status).json(result); //Return 404 result
