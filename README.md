@@ -22,27 +22,42 @@
 ---
 
 ## Project Description 📝: 
+To help people begin their learning journey, and to make sure they see it through to the end, we wanted to create a product that implements a user-focused interface of a SMART Goal. A SMART Goal stands for Specific, Measurable, Attainable, Realistic, And Timely. They have been proven to help motivate people to accomplish more.
+
+However, it can be confusing to organize groups of tasks into this format, and even harder for a whole project. **Followthru** helps you create SMART goals without even knowing it through our user interface for project management. 
+   
+    Our goal is to implement each of the letters in the SMART acronyms with a service in our application. 
+* S: *Specific* 🎯
+    * Creating modular project organization
+    * Branching off related groups into smaller pieces
+* M: *Measurable* 📏
+    * To-do Lists
+    * See your progress with contribution graphs 
+    *Time-lines for the future
+* A: *Attainable* ⛳️
+    * Selecting priorities allows more thought into goals
+    * Modularity helps to see steps necessary
+* R: *Relevant* 👤
+    * Dedicated page for help creating goals
+    * Online video and written tutorials
+    * High quality information about motivation and goal theories
+* T: *Time-Bound* ⏳
+    * Due dates allow for thought about timelines
+    * Push notifications make sure users stay on top of things
+    * Priority of timelines gives more flexibility than other services
+
+Solution, Goal, Problems
+
+---
+
+## Inspiration 💡:
 While thinking about the challenges we face learning how to code, or learning how to 3D model, or how to garden, or doing any project/assignment, one problem stood out: Following through with our projects. 
     
 As anyone who has competed in a hackathon like this one knows, we can make a lot of progress on an application in 36 hours, but afterwards we lose a lot of motivation to complete the project. This is true in all walks of life, and others have difficulty starting projects in the first place. 
 
-To help people begin and finish their learning journeys, we wanted to create a product that implements a user-focused implementation of a SMART Goal. A SMART Goal stands for Specific, Measurable, Attainable, Realistic, And Timely. It can be confusing to organize groups of tasks into this format, and even harder for a whole project. Followthru helps you create SMART goals without even knowing it through our user interface for project management. 
-   
-Our goal is to implement each of the letters in the SMART acronyms with a service in our application. 
-* S: Specific
-    * 
-* M: Measurable
-    * 
-* A: Attainable
-    *
-* R:
-* T:
-Solution, Goal, Problems
+Combining our team's many ideas together, of to-do apps, learning resources, help with exam fever, organization software, and more, we came up with the name Followthru, and the rest evolved from that.
 
-## Inspiration 💡:
-
-
-We have problems and see others have problems with either starting or finishing projects.
+---
 
 ## What it does 📱☑️:
 
