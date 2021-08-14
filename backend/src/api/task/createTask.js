@@ -1,4 +1,4 @@
-const taskDAO = require("../dao/taskDAO.js"); //Used to send data to DAO
+const taskDAO = require("../../dao/taskDAO.js"); //Used to send data to DAO
 module.exports = class taskController { //Pulls user data and sends to DAO
     static async apiGetTask(req, res, next){
         //Get request route function
