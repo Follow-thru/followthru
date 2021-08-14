@@ -1,8 +1,8 @@
-const User = require('../../models/user');
+const User = require('../models/user');
 const bcrypt = require('bcrypt');
 
 /* register controller */
-module.exports = class authController {
+module.exports = class registerController {
     static async apiPostTask(req, res, next) {
         // search if the user already exsisted (call findOne function)
         const user = await User.findOne({ username: req.body.username });
@@ -38,5 +38,6 @@ module.exports = class authController {
         } else {
             return;
         }
+
     }
 }
