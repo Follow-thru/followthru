@@ -4,4 +4,4 @@ const taskCtrl = require("../api/task"); //Takes user input and sends to DAO
 
 router.route("/").get(taskCtrl.apiGetTask); //Send request to GET task on default
 
-module.exports = router; //Exports class for routing information about restaurants
+module.exports = router; //Exports class for routing information about tasks

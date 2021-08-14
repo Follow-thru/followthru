@@ -1,13 +1,13 @@
-const Task = require('../models/task');
+const Branch = require('../models/branch');
 const bcrypt = require('bcrypt');
 const response = require('../models/response'); //Created pre-formatted uniform response
 
 /* register controller */
-module.exports = class taskController {
-    static async apiGetTask(req, res, next) {
+module.exports = class branchController {
+    static async apiGetBranch(req, res, next) {
         let result = new response();
         // search if the user already exsisted (call findOne function)
-        const task = await Task.findOne({ id: req.query.id })
+        const branch = await Branch.findOne({ id: req.query.id })
         .catch((errors) => {
             result.status = 400;
             result.errors.push(errors);
@@ -15,13 +15,13 @@ module.exports = class taskController {
             result.connected = true;
         });
         if (result.connected){
-            if (task == null) {
+            if (branch == null) {
                 result.status = 400;
-                result.errors.push('Task not found');
+                result.errors.push('Branch not found');
             }
             else{
                 result.status = 200;
-                result.response = task;
+                result.response = branch;
             }
         }
         res.status(result.status).json(result); //Return whatever result remains
