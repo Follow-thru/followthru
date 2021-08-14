@@ -2,5 +2,6 @@
     "id": 1,
     "name": "Task",
     "due": 1234567898767,
+    "priority": 3,
     "info": "This task is for doing something"
 }
