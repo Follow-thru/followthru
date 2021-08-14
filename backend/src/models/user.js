@@ -5,6 +5,7 @@ const bcrypt = require('bcrypt');
 
 //user schema that defines the entity
 const userSchema = new mongoose.Schema({
+    // define type, required (the most important)
     username: {
         type: String,
         required: true,
@@ -16,11 +17,5 @@ const userSchema = new mongoose.Schema({
         required: true,
     }
 }, { timestamps: true});
-
-userSchema.methods = {
-    authenticate: async function(password) {
-        return await bcrypt.compare(password, this.hash_password);
-    }
-}
 
 module.exports = mongoose.model('User', userSchema);

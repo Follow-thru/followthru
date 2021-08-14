@@ -20,6 +20,7 @@ mongoose.connect(
     console.error(err.stack)
     process.exit(1)
 }).then(() => {
+    // if connection is successful, log it and start the server
     console.log('Database connected');
     app.listen(port, () => {
         console.log(`listening on port ${port}`)
