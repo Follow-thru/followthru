@@ -6,14 +6,15 @@ const response = require('../models/response'); //Created pre-formatted uniform 
 module.exports = class registerController {
     static async apiPostRegister(req, res, next) {
         let result = new response();
+        let user;
         // search if the user already exsisted (call findOne function)
-        const user = await User.findOne({ username: req.body.username })
-        // .catch((errors) => {
-        //     result.status = 400;
-        //     result.errors.push(errors);
-        // }).then(() => { // Return the new user info if successful
-        //     result.connected = true;
-        // });
+        try {
+            user = await User.findOne({ username: req.body.username })
+            result.connected = true; 
+        } catch (e) {
+            result.status = 400;
+            result.errors.push("Error Connecting", e)
+        }
         if (user !== null) {
             result.status = 400;
             result.errors.push('Username taken');
@@ -30,13 +31,15 @@ module.exports = class registerController {
                 hash_password
             });
             // Push the data to DB asynchronously (call save() function and handle errors)
-            await newUser.save().catch((errors) => {
-                result.status = 400;
-                result.errors.push(errors);
-            }).then(() => { // Return the new user info if successful
+            try{
+                await newUser.save();
                 result.status = 201;
-                result.response = newUser
-            });
+                result.success = true;
+                result.response = newUser;
+            } catch (e){
+                result.status = 400;
+                result.errors.push("Error when pushing user to database", e);
+            }
         }
         res.status(result.status).json(result); //Return whatever result remains
     }

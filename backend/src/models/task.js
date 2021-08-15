@@ -7,7 +7,7 @@ const bcrypt = require('bcrypt');
 const taskSchema = new mongoose.Schema({
     // define type, required (the most important)
     parentId: {
-        type: mongoose.ObjectId,
+        type: String,
         required: true
     },
     name: {

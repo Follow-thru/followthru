@@ -38,26 +38,28 @@ module.exports = class taskController {
         //Get userId with JWT
         let parentId = 1;
         //Create new project
-
+        let newTask;
         try{
-            const newTask = new task({
+            newTask = new Task({
                 parentId,
                 name,
                 due,
                 priority,
                 info
             });
-            await newTask.save()
-            .catch((errors) => {
-                result.status = 400;
-                result.errors.push(errors);
-            }).then(() => { // Return the new user info if successful
-                result.status = 201;
-                result.response = newTask
-            });
         } catch (e) {
             result.status = 400;
-            result.errors.push(e);
+            result.errors.push("Error creating task", e);
+        }
+        try {
+            await newTask.save()
+            result.status = 201;
+            result.response = newTask;
+            result.success = true;
+            result.connected = true;
+        } catch (e) {
+            result.status = 400;
+            result.errors.push("Error pushing to database", e);
         }
         res.status(result.status).json(result); //Return whatever result remains
     }
