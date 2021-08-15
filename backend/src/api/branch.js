@@ -9,13 +9,13 @@ module.exports = class branchController {
         let result = new response();
         // search if the user already exsisted (call findOne function)
         console.log(req.query.id)
-        const branch = await Branch.findOne({_id: req.query.id })
-        .catch((errors) => {
-            result.status = 400;
-            result.errors.push(errors);
-        }).then(() => { // Return the new user info if successful
-            result.connected = true;
-        });
+        const branch = await Branch.findOne({});
+        // .catch((errors) => {
+        //     result.status = 400;
+        //     result.errors.push(errors);
+        // }).then(() => { // Return the new user info if successful
+        //     result.connected = true;
+        // });
         console.log(branch)
         if (result.connected){
             if (branch === undefined) {

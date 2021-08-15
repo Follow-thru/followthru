@@ -8,12 +8,12 @@ module.exports = class registerController {
         let result = new response();
         // search if the user already exsisted (call findOne function)
         const user = await User.findOne({ username: req.body.username })
-        .catch((errors) => {
-            result.status = 400;
-            result.errors.push(errors);
-        }).then(() => { // Return the new user info if successful
-            result.connected = true;
-        });
+        // .catch((errors) => {
+        //     result.status = 400;
+        //     result.errors.push(errors);
+        // }).then(() => { // Return the new user info if successful
+        //     result.connected = true;
+        // });
         if (user !== null) {
             result.status = 400;
             result.errors.push('Username taken');
