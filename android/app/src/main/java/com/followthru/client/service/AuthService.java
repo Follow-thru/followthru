@@ -11,6 +11,8 @@ import com.followthru.client.observers.AuthStatusCallback;
 
 public class AuthService extends Service {
 
+    private static String url = "http://localhost:2000/api/register";
+
     private final AuthStatusCallback mAuthStatusCallback;
 
     public AuthService(AuthStatusCallback authStatusCallback) {
@@ -22,7 +24,7 @@ public class AuthService extends Service {
     }
 
     public void registerUser(String username, String password) {
-
+        // send post request here
     }
 
     @Nullable
