@@ -74,14 +74,19 @@ On our goal help page, we give the user content on how to create acheivable and 
 
 ## How we built it 💻:
 With our team's combined experience, we were able to create an application that runs natively on IOS and Android, and on the web on mobile and desktop. After JJ and John created a unified design in Figma, everyone was able to code in their native platforms. 
+<img width="1492" alt="Screen Shot 2021-08-14 at 11 13 33 AM" src="https://user-images.githubusercontent.com/68486874/129477596-6a03a8cb-3f0e-4e72-8fdd-02e6ec5f5954.png">
+
 JJ coded the IOS app in SwiftUI with swift.
 
 Kevin coded the Android app in IntelliJ with Java
+![android_ui_dev_2](https://user-images.githubusercontent.com/68486874/129477533-f9be3ccd-3540-48c7-bd07-5c4d426bab24.jpg)
 
 John coded the Website in VSCode with React
+<img width="1280" alt="Screen Shot 2021-08-13 at 10 24 35 PM" src="https://user-images.githubusercontent.com/68486874/129477544-daa3a9ec-1fbe-4318-8bfd-9d93a5253d40.png">
 
 Zac and Kevin coded the backend in VSCode with node and express.
-<img width="500" alt="node.js screenshot" src="https://user-images.githubusercontent.com/68486874/129448721-ace1b518-d745-4296-9a2e-29301f7cd481.png">
+<img width="1489" alt="Screen Shot 2021-08-15 at 7 51 20 AM" src="https://user-images.githubusercontent.com/68486874/129477575-aca7b97e-b0bf-4714-8970-ce72cab0796c.png">
+
 
 ## Challenges we ran into 💥:
 * Time frame, obviously
