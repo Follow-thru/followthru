@@ -13,8 +13,7 @@ struct DueDateView: View {
             Text("Due Aug. 15")
                 .padding(.all, 10)
         }
-        .background(Color.red)
-        .border(Color.black, width: 4)
+        .background(Color.AppTheme.fadedRed)
         .cornerRadius(8)
     }
 }

@@ -23,6 +23,7 @@
 		14F6528226C873AC00B8D950 /* ProjectListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F6528126C873AC00B8D950 /* ProjectListView.swift */; };
 		14F6528526C8760200B8D950 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F6528426C8760200B8D950 /* Webservice.swift */; };
 		14F6528826C87B4A00B8D950 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F6528726C87B4A00B8D950 /* LoginViewModel.swift */; };
+		14F6528A26C8B3F900B8D950 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F6528926C8B3F900B8D950 /* ColorExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		14F6528126C873AC00B8D950 /* ProjectListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListView.swift; sourceTree = "<group>"; };
 		14F6528426C8760200B8D950 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		14F6528726C87B4A00B8D950 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		14F6528926C8B3F900B8D950 /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				14EDCF2226C70F4200DA1413 /* Assets.xcassets */,
 				14EDCF2726C70F4200DA1413 /* Info.plist */,
 				14EDCF2426C70F4200DA1413 /* Preview Content */,
+				14F6528926C8B3F900B8D950 /* ColorExtensions.swift */,
 			);
 			path = ULHacksApp;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				14EDCF5D26C7F9E600DA1413 /* ProjectView.swift in Sources */,
 				14EDCF5126C7801B00DA1413 /* BrowseView.swift in Sources */,
 				14F6528026C86F9E00B8D950 /* LoginView.swift in Sources */,
+				14F6528A26C8B3F900B8D950 /* ColorExtensions.swift in Sources */,
 				14F6528526C8760200B8D950 /* Webservice.swift in Sources */,
 				14F6528226C873AC00B8D950 /* ProjectListView.swift in Sources */,
 				14EDCF1F26C70F3900DA1413 /* ULHacksAppApp.swift in Sources */,

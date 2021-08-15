@@ -42,7 +42,7 @@ struct BranchCardView: View {
             }
             
         }
-        .background(Color.secondary)
+        .background(Color.AppTheme.fadedGreen)
         .cornerRadius(10)
         .padding(.all, 12)
    }

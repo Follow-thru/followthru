@@ -43,7 +43,7 @@ struct ProjectCardView: View {
                 }
                 
             }
-            .background(Color.gray)
+            .background(Color.AppTheme.fadedBlue)
             .cornerRadius(10)
             .padding(.all, 12)
             .clipped()
