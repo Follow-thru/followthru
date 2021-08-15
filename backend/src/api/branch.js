@@ -7,9 +7,9 @@ module.exports = class branchController {
     static async apiGetBranch(req, res, next) {
         let result = new response();
         // search if the user already exsisted (call findOne function)
-        let project;
+        let branch;
         try{
-            project = await Branch.findOne();
+            branch = await Branch.findById(req.query.id);
             result.connected = true;
         } catch (e) {
             result.status = 400;
@@ -19,8 +19,7 @@ module.exports = class branchController {
             if (branch === null) {
                 result.status = 400;
                 result.errors.push('Branch not found');
-            }
-            else{
+            } else{
                 result.status = 200;
                 result.success = true;
                 result.response = branch;

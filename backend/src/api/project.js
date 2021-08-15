@@ -9,7 +9,7 @@ module.exports = class projectController {
         // search if the project already exsisted (call findOne function)
         let project;
         try{
-            project = await Project.findOne();
+            project = await Project.findById(req.query.id);
             result.connected = true;
         } catch (e) {
             result.status = 400;
@@ -19,8 +19,7 @@ module.exports = class projectController {
             if (project == null) {
                 result.status = 400;
                 result.errors.push('Project not found');
-            }
-            else{
+            } else{
                 result.status = 200;
                 result.success = true;
                 result.response = project;

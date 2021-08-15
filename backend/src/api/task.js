@@ -7,21 +7,21 @@ module.exports = class taskController {
     static async apiGetTask(req, res, next) {
         let result = new response();
         // search if the user already exsisted (call findOne function)
-        const task = await Task.findOne({});
-        console.log(task)
-        // .catch((errors) => {
-        //     result.status = 400;
-        //     result.errors.push(errors);
-        // }).then(() => { // Return the new user info if successful
-        //     result.connected = true;
-        // });
+        let task;
+        try{
+            task = await Task.findById(req.query.id);
+            result.connected = true;
+        } catch (e) {
+            result.status = 400;
+            result.errors.push("Error Connecting", e);
+        }
         if (result.connected){
             if (task == null) {
                 result.status = 400;
                 result.errors.push('Task not found');
-            }
-            else{
+            } else{
                 result.status = 200;
+                result.success = true;
                 result.response = task;
             }
         }
