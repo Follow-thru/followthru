@@ -12,17 +12,12 @@ struct BrowseView: View {
         ScrollView{
             VStack {
                 NavigationLink(
-                    destination: ProjectView(projectName: "Web Dev Server"),
+                    destination: ProjectView(project: DataController().project1),
                     label: {
-                        ProjectCardView()
+                        ProjectCardView(projectName: DataController().project1.name, date: DataController().project1.date, priority: DataController().project1.priority)
                             .foregroundColor(Color.black)
                     })
-                NavigationLink(
-                    destination: ProjectView(projectName: "Web Dev Server"),
-                    label: {
-                        ProjectCardView()
-                            .foregroundColor(Color.black)
-                    })
+                ProjectCardView(projectName: DataController().project1.name, date: DataController().project1.date, priority: DataController().project1.priority)
             }
                 
         }

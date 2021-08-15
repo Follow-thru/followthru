@@ -8,9 +8,17 @@
 import SwiftUI
 
 struct DueDateView: View {
+    
+    var date: String = "Aug. 15"
+    
+    init(date: String = "Aug. 15") {
+        self.date = date
+        
+    }
+    
     var body: some View {
         VStack(){
-            Text("Due Aug. 15")
+            Text("Due \(date)")
                 .padding(.all, 10)
         }
         .background(Color.AppTheme.fadedRed)

@@ -20,12 +20,14 @@
 		14EDCF6126C7FE1B00DA1413 /* Branch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EDCF6026C7FE1B00DA1413 /* Branch.swift */; };
 		14EDCF6326C7FE2600DA1413 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EDCF6226C7FE2600DA1413 /* Project.swift */; };
 		14F6528026C86F9E00B8D950 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F6527F26C86F9E00B8D950 /* LoginView.swift */; };
-		14F6528226C873AC00B8D950 /* ProjectListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F6528126C873AC00B8D950 /* ProjectListView.swift */; };
 		14F6528526C8760200B8D950 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F6528426C8760200B8D950 /* Webservice.swift */; };
 		14F6528826C87B4A00B8D950 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F6528726C87B4A00B8D950 /* LoginViewModel.swift */; };
 		14F6528A26C8B3F900B8D950 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F6528926C8B3F900B8D950 /* ColorExtensions.swift */; };
 		14F6528C26C8BE8B00B8D950 /* PriorityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F6528B26C8BE8B00B8D950 /* PriorityView.swift */; };
 		14F6528E26C8C5E100B8D950 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F6528D26C8C5E100B8D950 /* TaskView.swift */; };
+		14F6529026C8D6D700B8D950 /* TaskCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F6528F26C8D6D700B8D950 /* TaskCardView.swift */; };
+		14F6529226C8DCBC00B8D950 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F6529126C8DCBC00B8D950 /* DataController.swift */; };
+		14F6529426C92D8500B8D950 /* BrowseBranchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F6529326C92D8500B8D950 /* BrowseBranchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,12 +46,14 @@
 		14EDCF6026C7FE1B00DA1413 /* Branch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Branch.swift; sourceTree = "<group>"; };
 		14EDCF6226C7FE2600DA1413 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		14F6527F26C86F9E00B8D950 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		14F6528126C873AC00B8D950 /* ProjectListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListView.swift; sourceTree = "<group>"; };
 		14F6528426C8760200B8D950 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		14F6528726C87B4A00B8D950 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		14F6528926C8B3F900B8D950 /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		14F6528B26C8BE8B00B8D950 /* PriorityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityView.swift; sourceTree = "<group>"; };
 		14F6528D26C8C5E100B8D950 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
+		14F6528F26C8D6D700B8D950 /* TaskCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCardView.swift; sourceTree = "<group>"; };
+		14F6529126C8DCBC00B8D950 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		14F6529326C92D8500B8D950 /* BrowseBranchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseBranchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +131,7 @@
 		14EDCF2F26C70FA800DA1413 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				14F6529126C8DCBC00B8D950 /* DataController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -137,8 +142,8 @@
 				14EDCF5026C7801B00DA1413 /* BrowseView.swift */,
 				14EDCF5C26C7F9E600DA1413 /* ProjectView.swift */,
 				14F6527F26C86F9E00B8D950 /* LoginView.swift */,
-				14F6528126C873AC00B8D950 /* ProjectListView.swift */,
 				14F6528D26C8C5E100B8D950 /* TaskView.swift */,
+				14F6529326C92D8500B8D950 /* BrowseBranchView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 				14EDCF5426C7DF2700DA1413 /* DueDateView.swift */,
 				14EDCF5A26C7EAE700DA1413 /* BranchCardView.swift */,
 				14F6528B26C8BE8B00B8D950 /* PriorityView.swift */,
+				14F6528F26C8D6D700B8D950 /* TaskCardView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -239,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14F6529426C92D8500B8D950 /* BrowseBranchView.swift in Sources */,
 				14EDCF5F26C7FE0C00DA1413 /* Task.swift in Sources */,
 				14EDCF6126C7FE1B00DA1413 /* Branch.swift in Sources */,
 				14EDCF5526C7DF2700DA1413 /* DueDateView.swift in Sources */,
@@ -252,9 +259,10 @@
 				14F6528E26C8C5E100B8D950 /* TaskView.swift in Sources */,
 				14F6528C26C8BE8B00B8D950 /* PriorityView.swift in Sources */,
 				14F6528026C86F9E00B8D950 /* LoginView.swift in Sources */,
+				14F6529226C8DCBC00B8D950 /* DataController.swift in Sources */,
+				14F6529026C8D6D700B8D950 /* TaskCardView.swift in Sources */,
 				14F6528A26C8B3F900B8D950 /* ColorExtensions.swift in Sources */,
 				14F6528526C8760200B8D950 /* Webservice.swift in Sources */,
-				14F6528226C873AC00B8D950 /* ProjectListView.swift in Sources */,
 				14EDCF1F26C70F3900DA1413 /* ULHacksAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

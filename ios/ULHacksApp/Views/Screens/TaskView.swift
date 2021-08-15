@@ -14,7 +14,7 @@ struct TaskView: View {
     var body: some View {
         VStack {
             HStack {
-                DueDateView()
+                DueDateView(date: task.date)
                     .padding(.leading, 8)
                 Spacer()
                 PriorityView(level: task.priority)
@@ -48,7 +48,7 @@ struct TaskView: View {
 struct TaskView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView{
-        TaskView(task: Task(name: "New Sorting Algorithm", date: "August 14", priority: 2))
+        TaskView(task: Task(name: "New Sorting Algorithm", date: "Aug. 14", priority: 2))
         }
     }
 }

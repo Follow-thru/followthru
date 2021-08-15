@@ -9,12 +9,16 @@ import SwiftUI
 
 struct BranchCardView: View {
     
-    var branchName: String = "MongoDB Database"
+    var branch: Branch
+    
+    init(branch: Branch) {
+        self.branch = branch
+    }
     
     var body: some View {
         VStack {
             HStack {
-                Text("About \(branchName)")
+                Text("\(branch.name)")
                     .font(.title2)
 
                 Spacer()
@@ -34,13 +38,13 @@ struct BranchCardView: View {
                     .padding(.trailing, 12)
             }
             HStack{
-                DueDateView()
+                DueDateView(date: branch.date)
                     .padding(.bottom, 12)
                     .padding(.leading, 12)
                 
                 Spacer()
                 
-                PriorityView(level: 2)
+                PriorityView(level: branch.priority)
             }
             
         }
@@ -52,12 +56,16 @@ struct BranchCardView: View {
 
 struct AboutBranchCardView: View {
     
-    var branchName: String = "MongoDB Database"
+    var branch: Branch
+    
+    init(branch: Branch) {
+        self.branch = branch
+    }
     
     var body: some View {
         VStack {
             HStack {
-                Text("About \(branchName)")
+                Text("About \(branch.name)")
                     .font(.title2)
 
                 Spacer()
@@ -74,15 +82,17 @@ struct AboutBranchCardView: View {
                     .padding(.bottom, 12)
             }
             HStack{
-                DueDateView()
+                DueDateView(date: branch.date)
                     .padding(.bottom, 12)
                     .padding(.leading, 12)
                 
                 Spacer()
+                
+                PriorityView(level: branch.priority)
             }
             
         }
-        .background(Color.secondary)
+        .background(Color.AppTheme.fadedGreen)
         .cornerRadius(10)
         .padding(.all, 12)
    }
@@ -90,6 +100,6 @@ struct AboutBranchCardView: View {
     
 struct BranchCardView_Previews: PreviewProvider {
     static var previews: some View {
-        BranchCardView()
+        BranchCardView(branch: DataController().project1.branches[0])
     }
 }

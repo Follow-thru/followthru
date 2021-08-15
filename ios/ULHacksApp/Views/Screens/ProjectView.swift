@@ -9,23 +9,36 @@ import SwiftUI
 
 struct ProjectView: View {
     
-    var projectName: String
+    var project: Project
+    
+    init(project: Project) {
+        self.project = project
+    }
     
     var body: some View {
         ScrollView{
         VStack{
-            ProjectCardView()
-            BranchCardView()
+            ProjectCardView(projectName: project.name, date: project.date, priority: project.priority, chevron: false)
+            ForEach(project.branches, id:\.id) { branch in
+                NavigationLink(
+                    destination: BrowseBranchView(branch: branch),
+                    label: {
+                        BranchCardView(branch: branch)
+                            .foregroundColor(Color.black)
+                    })
+                
+                }
+
+            }
         }
-        }
-        .navigationTitle("\(projectName)")
+        .navigationTitle("\(project.name)")
     }
 }
 
 struct ProjectView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView{
-            ProjectView(projectName: "Web Dev Server")
+            ProjectView(project: DataController().project1)
         }
     }
 }
