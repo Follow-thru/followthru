@@ -6,6 +6,7 @@ module.exports = class registerController {
     static async apiPostTask(req, res, next) {
         // search if the user already exsisted (call findOne function)
         const user = await User.findOne({ username: req.body.username });
+        console.log(user);
         if (user !== null) {
             //handle errors and end the subroutine           
             res.status(400).json({
