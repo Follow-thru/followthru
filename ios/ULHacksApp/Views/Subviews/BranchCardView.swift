@@ -19,7 +19,7 @@ struct BranchCardView: View {
 
                 Spacer()
                 
-                Image(systemName: "circle")
+                Image(systemName: "plus.square.on.square")
                     .font(.title)
                     
             }
@@ -39,6 +39,8 @@ struct BranchCardView: View {
                     .padding(.leading, 12)
                 
                 Spacer()
+                
+                PriorityView()
             }
             
         }
@@ -60,7 +62,7 @@ struct AboutBranchCardView: View {
 
                 Spacer()
                 
-                Image(systemName: "circle")
+                Image(systemName: "plus.square.on.square")
                     .font(.title)
                     
             }

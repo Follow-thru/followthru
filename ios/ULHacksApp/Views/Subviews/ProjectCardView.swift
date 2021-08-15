@@ -20,7 +20,7 @@ struct ProjectCardView: View {
 
                     Spacer()
                     
-                    Image(systemName: "circle")
+                    Image(systemName: "plus.square.on.square")
                         .font(.title)
                         
                 }
@@ -40,6 +40,8 @@ struct ProjectCardView: View {
                         .padding(.leading, 12)
                     
                     Spacer()
+                    
+                    PriorityView()
                 }
                 
             }

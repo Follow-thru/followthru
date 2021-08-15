@@ -24,6 +24,7 @@
 		14F6528526C8760200B8D950 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F6528426C8760200B8D950 /* Webservice.swift */; };
 		14F6528826C87B4A00B8D950 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F6528726C87B4A00B8D950 /* LoginViewModel.swift */; };
 		14F6528A26C8B3F900B8D950 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F6528926C8B3F900B8D950 /* ColorExtensions.swift */; };
+		14F6528C26C8BE8B00B8D950 /* PriorityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F6528B26C8BE8B00B8D950 /* PriorityView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		14F6528426C8760200B8D950 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		14F6528726C87B4A00B8D950 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		14F6528926C8B3F900B8D950 /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
+		14F6528B26C8BE8B00B8D950 /* PriorityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				14EDCF5226C7805C00DA1413 /* ProjectCardView.swift */,
 				14EDCF5426C7DF2700DA1413 /* DueDateView.swift */,
 				14EDCF5A26C7EAE700DA1413 /* BranchCardView.swift */,
+				14F6528B26C8BE8B00B8D950 /* PriorityView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 				14EDCF2126C70F3900DA1413 /* ContentView.swift in Sources */,
 				14EDCF5D26C7F9E600DA1413 /* ProjectView.swift in Sources */,
 				14EDCF5126C7801B00DA1413 /* BrowseView.swift in Sources */,
+				14F6528C26C8BE8B00B8D950 /* PriorityView.swift in Sources */,
 				14F6528026C86F9E00B8D950 /* LoginView.swift in Sources */,
 				14F6528A26C8B3F900B8D950 /* ColorExtensions.swift in Sources */,
 				14F6528526C8760200B8D950 /* Webservice.swift in Sources */,
