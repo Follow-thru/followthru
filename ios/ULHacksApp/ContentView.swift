@@ -11,28 +11,28 @@ struct ContentView: View {
     var body: some View {
         TabView {
             NavigationView {
-                BrowseView()
-            }
-                .tabItem {
-                    Image(systemName: "book.fill")
-                    Text("Feed")
-                }
-            NavigationView {
                 Text("Hello 2")
             }
                 .tabItem {
-                    Image(systemName: "magnifyingglass")
-                    Text("Browse")
+                    Image(systemName: "house")
+                    Text("Home")
                 }
-            Text("Screen 3")
+            NavigationView {
+                BrowseView()
+            }
                 .tabItem {
-                    Image(systemName: "square.and.arrow.up.fill")
-                    Text("Upload")
+                    Image(systemName: "list.bullet")
+                    Text("Projects")
+                }
+            Text("Help and Advice")
+                .tabItem {
+                    Image(systemName: "questionmark.circle")
+                    Text("Help")
                 }
             LoginView()
                 .tabItem {
                     Image(systemName: "person.fill")
-                    Text("BProfile")
+                    Text("Account")
                 }
 
         }

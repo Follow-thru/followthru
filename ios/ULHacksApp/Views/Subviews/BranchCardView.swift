@@ -40,7 +40,7 @@ struct BranchCardView: View {
                 
                 Spacer()
                 
-                PriorityView()
+                PriorityView(level: 2)
             }
             
         }

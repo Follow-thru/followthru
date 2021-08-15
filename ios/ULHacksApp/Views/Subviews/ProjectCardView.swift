@@ -41,7 +41,7 @@ struct ProjectCardView: View {
                     
                     Spacer()
                     
-                    PriorityView()
+                    PriorityView(level: 3)
                 }
                 
             }

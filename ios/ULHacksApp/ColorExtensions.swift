@@ -22,5 +22,11 @@ extension Color {
         static var fadedRedHighlight: Color {
             return Color("FadedRedHighlight")
         }
+        static var fadedGoldHighlight: Color {
+            return Color("FadedGoldHighlight")
+        }
+        static var fadedGreenHighlight: Color {
+            return Color("FadedGreenHighlight")
+        }
     }
 }
