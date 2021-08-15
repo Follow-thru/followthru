@@ -16,8 +16,8 @@ app.use(cors());
 app.use(express.json()); //Json module is used to parse json I guess
 
 // api
-app.use("/api/task", taskRoute); //If using this link, send to task object
 app.use("/api/register", registerRoute); //Send api authentication
+app.use("/api/task", taskRoute); //If using this link, send to task object
 app.use("/api/branch", branchRoute); //Send to branch object
 app.use("/api/project", projectRoute); //Send to branch object
 app.use("*", (req, res) => {

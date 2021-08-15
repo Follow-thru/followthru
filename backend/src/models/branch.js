@@ -6,12 +6,34 @@ const bcrypt = require('bcrypt');
 //user schema that defines the entity
 const branchSchema = new mongoose.Schema({
     // define type, required (the most important)
-    id: {
-        type: Number,
+    parentId: {
+        type: mongoose.ObjectId,
+        required: true
+    },
+    name: {
+        type: String,
         required: true,
-        trim: true,
-        unique: true
+    },
+    due: {
+        type: Number,
+        required: false,
+        default: 0,
+    },
+    priority: {
+        type: Number,
+        required: false,
+        default: 0,
+    },
+    info: {
+        type: String,
+        required: false,
+        default: "",
     }
-}); //I didn't include timestamp for get, hopefully that is okay
+}, { timestamps: true});
 
 module.exports = mongoose.model('Branch', branchSchema); //Export data formatting
+
+/*
+    trim: true,
+    unique: true
+*/
