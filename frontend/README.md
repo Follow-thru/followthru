@@ -1,3 +1,7 @@
+# Installing libraries before you start
+- `npm install bootstrap`, `npm install recharts`, `npm install nodemailer`, `npm install react-player`, `npm install react-router-dom`(not required probably)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
