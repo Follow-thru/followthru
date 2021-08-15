@@ -22,7 +22,7 @@ public class LoginActivity extends AppCompatActivity {
         TextView loginEntry = findViewById(R.id.register_entry);
         loginEntry.setOnClickListener(v -> {
             Intent intent = new Intent();
-            intent.setClass(LoginActivity.this, LoginActivity.class);
+            intent.setClass(LoginActivity.this, RegisterActivity.class);
             startActivity(intent);
         });
 
