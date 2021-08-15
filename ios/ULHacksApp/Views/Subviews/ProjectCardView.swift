@@ -30,6 +30,9 @@ struct ProjectCardView: View {
                     Text("A small description about the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget condimentum felis. \n \n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget condimentum felis, vitae blandit quam.\n \n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget condimentum felis.")
                         .padding(.horizontal, 12)
                         .padding(.bottom, 12)
+                    Image(systemName: "chevron.right")
+                        .font(.title)
+                        .padding(.trailing, 12)
                 }
                 HStack{
                     DueDateView()

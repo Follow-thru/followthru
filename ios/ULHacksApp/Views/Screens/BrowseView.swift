@@ -17,8 +17,14 @@ struct BrowseView: View {
                         ProjectCardView()
                             .foregroundColor(Color.black)
                     })
-            ProjectCardView()
+                NavigationLink(
+                    destination: ProjectView(projectName: "Web Dev Server"),
+                    label: {
+                        ProjectCardView()
+                            .foregroundColor(Color.black)
+                    })
             }
+                
         }
         .navigationTitle("Browse Projects")
     }

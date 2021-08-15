@@ -32,7 +32,6 @@ struct BranchCardView: View {
                 Image(systemName: "chevron.right")
                     .font(.title)
                     .padding(.trailing, 12)
-                    .foregroundColor(.blue)
             }
             HStack{
                 DueDateView()

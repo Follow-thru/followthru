@@ -29,7 +29,7 @@ struct ContentView: View {
                     Image(systemName: "square.and.arrow.up.fill")
                     Text("Upload")
                 }
-            Text("Screen 4")
+            LoginView()
                 .tabItem {
                     Image(systemName: "person.fill")
                     Text("BProfile")
