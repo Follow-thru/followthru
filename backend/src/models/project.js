@@ -7,7 +7,7 @@ const bcrypt = require('bcrypt');
 const projectSchema = new mongoose.Schema({
     // define type, required (the most important)
     userId: {
-        type: mongoose.ObjectId,
+        type: String,
         required: true
     },
     name: {

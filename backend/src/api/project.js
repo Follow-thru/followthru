@@ -7,21 +7,21 @@ module.exports = class projectController {
     static async apiGetProject(req, res, next) {
         let result = new response();
         // search if the project already exsisted (call findOne function)
-        const project = await Project.findOne({});
-        // .catch((errors) => {
-        //     result.status = 400;
-        //     result.errors.push(errors);
-        // }).then(() => { // Return the new user info if successful
-        //     result.connected = true;
-        // });
-        console.log(project);
+        let project;
+        try{
+            project = await Project.findById(req.query.id);
+            result.connected = true;
+        } catch (e) {
+            result.status = 400;
+            result.errors.push("Error Connecting", e);
+        }
         if (result.connected){
             if (project == null) {
                 result.status = 400;
                 result.errors.push('Project not found');
-            }
-            else{
+            } else{
                 result.status = 200;
+                result.success = true;
                 result.response = project;
             }
         }
@@ -39,25 +39,28 @@ module.exports = class projectController {
         //Get userId with JWT
         let userId = 1;
         //Create new project
-
+        let newProject;
         try{
-            const newProject = new project({
+            newProject = new Project({
                 userId,
                 name,
                 due,
                 priority,
                 info
             });
-            await newProject.save().catch((errors) => {
-                result.status = 400;
-                result.errors.push(errors);
-            }).then(() => { // Return the new user info if successful
-                result.status = 201;
-                result.response = newProject
-            });
+        } catch(e) {
+            result.status = 400;
+            result.errors.push("Error creating project", e)
+        }
+        try {
+            await newProject.save()
+            result.status = 201;
+            result.success = true;
+            result.connected = true;
+            result.response = newProject;
         } catch (e) {
             result.status = 400;
-            result.errors.push(e);
+            result.errors.push("Error pushing to database", e);
         }
         // Push the data to DB asynchronously (call save() function and handle errors)
         res.status(result.status).json(result); //Return whatever result remains

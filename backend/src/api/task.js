@@ -7,21 +7,21 @@ module.exports = class taskController {
     static async apiGetTask(req, res, next) {
         let result = new response();
         // search if the user already exsisted (call findOne function)
-        const task = await Task.findOne({});
-        console.log(task)
-        // .catch((errors) => {
-        //     result.status = 400;
-        //     result.errors.push(errors);
-        // }).then(() => { // Return the new user info if successful
-        //     result.connected = true;
-        // });
+        let task;
+        try{
+            task = await Task.findById(req.query.id);
+            result.connected = true;
+        } catch (e) {
+            result.status = 400;
+            result.errors.push("Error Connecting", e);
+        }
         if (result.connected){
             if (task == null) {
                 result.status = 400;
                 result.errors.push('Task not found');
-            }
-            else{
+            } else{
                 result.status = 200;
+                result.success = true;
                 result.response = task;
             }
         }
@@ -38,26 +38,28 @@ module.exports = class taskController {
         //Get userId with JWT
         let parentId = 1;
         //Create new project
-
+        let newTask;
         try{
-            const newTask = new task({
+            newTask = new Task({
                 parentId,
                 name,
                 due,
                 priority,
                 info
             });
-            await newTask.save()
-            .catch((errors) => {
-                result.status = 400;
-                result.errors.push(errors);
-            }).then(() => { // Return the new user info if successful
-                result.status = 201;
-                result.response = newTask
-            });
         } catch (e) {
             result.status = 400;
-            result.errors.push(e);
+            result.errors.push("Error creating task", e);
+        }
+        try {
+            await newTask.save()
+            result.status = 201;
+            result.response = newTask;
+            result.success = true;
+            result.connected = true;
+        } catch (e) {
+            result.status = 400;
+            result.errors.push("Error pushing to database", e);
         }
         res.status(result.status).json(result); //Return whatever result remains
     }
