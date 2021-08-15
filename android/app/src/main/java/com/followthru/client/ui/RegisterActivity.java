@@ -16,8 +16,8 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        TextView usernameInput = findViewById(R.id.username_input);
-        TextView passwordInput = findViewById(R.id.password_input);
+        TextView usernameInput = findViewById(R.id.register_username_input);
+        TextView passwordInput = findViewById(R.id.register_password_input);
 
         TextView loginEntry = findViewById(R.id.login_entry);
         loginEntry.setOnClickListener(v -> {
@@ -26,13 +26,13 @@ public class RegisterActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        Button registerButton = findViewById(R.id.login_button);
+        Button registerButton = findViewById(R.id.register_button);
         registerButton.setOnClickListener(v -> {
             String username = usernameInput.getText().toString();
             String password = passwordInput.getText().toString();
 
             Intent intent = new Intent();
-            intent.setClass(RegisterActivity.this, ProjectActivity.class);
+            intent.setClass(RegisterActivity.this, AboutUsActivity.class);
             startActivity(intent);
         });
     }

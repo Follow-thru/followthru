@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.followthru.client.R;
 
-public class ProjectActivity extends AppCompatActivity {
+public class AboutUsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_project);
+        setContentView(R.layout.activity_about_us);
     }
 }
