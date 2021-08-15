@@ -25,7 +25,7 @@ module.exports = class registerController {
             } = req.body;
             // hash the password and create new User (using bcrypt library)
             const hash_password = await bcrypt.hash(password, 10)
-            const newUser = new user({
+            const newUser = new User({
                 username,
                 hash_password
             });
