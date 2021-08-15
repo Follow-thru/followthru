@@ -121,14 +121,22 @@ Written in
 
 ## Views/Pages:
 * Homepage
+<img width="1489" alt="Screen Shot 2021-08-15 at 7 55 35 AM" src="https://user-images.githubusercontent.com/68486874/129477735-a634e76b-ca84-4c33-aeda-19df4b1254f0.png">
     * Settings Pop-Up
 * Project List
+<img width="1489" alt="Screen Shot 2021-08-15 at 7 56 23 AM" src="https://user-images.githubusercontent.com/68486874/129477773-779b1565-590d-491a-b184-c49c7eb3e177.png">
     * View Project
+    <img width="471" alt="Screen Shot 2021-08-15 at 7 59 43 AM" src="https://user-images.githubusercontent.com/68486874/129477799-588807e4-bcd4-49a7-aa78-959df50eb64d.png">
         * View Branch
+        <img width="471" alt="Screen Shot 2021-08-15 at 7 59 53 AM" src="https://user-images.githubusercontent.com/68486874/129477804-95e77973-d4d1-4139-9a4a-d8c0bdfc7ca9.png">
             * View Task
+            <img width="471" alt="Screen Shot 2021-08-15 at 8 00 04 AM" src="https://user-images.githubusercontent.com/68486874/129477806-aef625af-4a80-402e-b085-9c7f28c72c51.png">
 * Goal Help
+<img width="1489" alt="Screen Shot 2021-08-15 at 7 56 59 AM" src="https://user-images.githubusercontent.com/68486874/129477844-682da5a8-d5a3-40ec-8729-beeda8f66a8a.png">
 * Login
+![android_ui_2](https://user-images.githubusercontent.com/68486874/129477812-387d08e0-5a29-4714-b11e-2a812d17d476.jpg)
 * Register
+<img width="1489" alt="Screen Shot 2021-08-15 at 7 56 32 AM" src="https://user-images.githubusercontent.com/68486874/129477836-752acb76-dc5f-4f88-a9b5-3afd61c08310.png">
 * About Us
 
 ## Backend
