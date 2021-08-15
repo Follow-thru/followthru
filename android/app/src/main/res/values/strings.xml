@@ -1,3 +1,79 @@
 <resources>
-    <string name="app_name">followthru-android</string>
+    <string name="app_name">FollowThru</string>
+
+    <string name="send">Send</string>
+    <string name="date">date</string>
+    <string name="message_field">Message Field</string>
+    <string name="time">Time</string>
+    <string name="name">Name</string>
+    <string name="profile">Profile</string>
+    <string name="date_format">yyyy-MM-dd</string>
+
+    <string name="register">Register</string>
+    <string name="register_username_hint">Enter new username</string>
+    <string name="register_password_hint">Enter new password</string>
+    <string name="login_username_hint">Enter your username</string>
+    <string name="login_password_hint">Enter your password</string>
+
+    <string name="chat_hint">Enter Message</string>
+    <string name="login">Login</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="already_have_an_account">Already have an account?</string>
+
+    <string name="about_us">About us</string>
+
+    <string name="about_us_1">
+        To help people begin their learning journey,
+        and to make sure they see it through to the end,
+        we wanted to create a product that implements
+        a user-focused interface of a SMART Goal. A SMART Goal stands for Specific,
+        Measurable, Attainable, Realistic, And Timely.
+        They have been proven to help motivate people to accomplish more.
+    </string>
+
+    <string name="about_us_2">
+        However, it can be confusing to organize groups of tasks into this format,
+        and even harder for a whole project.
+        Followthru helps you create SMART goals without even knowing it
+        through our user interface for project management.
+    </string>
+
+    <string name="team">Team</string>
+
+    <string name="kevin_role">
+        Backend developer and android developer
+    </string>
+
+    <string name="kevin_other">
+        I architected and engineered the routes and models of the serverside,
+        setup the database, and developed the android layouts and UI logic.
+        Fun fact: I cook charcoal barbecue very well.
+    </string>
+
+    <string name="john_role">
+        Frontend developer and designer
+    </string>
+
+    <string name="john_other">
+        I coded the UI of the website as well as some functionalities using reactjs.
+        Fun fact: I eat a lot for my weight
+    </string>
+
+    <string name="zac_role">
+        Backend developer and project manager
+    </string>
+
+    <string name="zac_other">
+        I coded most of the backend, using node, express and mongodb.
+        Fun fact: I can do a backflip.
+    </string>
+
+    <string name="jj_role">
+        iOS developer and designer
+    </string>
+
+    <string name="jj_other">
+        I coded the ios app and designed the UI for all platforms.
+    </string>
 </resources>
