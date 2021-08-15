@@ -11,7 +11,14 @@ struct ContentView: View {
     var body: some View {
         TabView {
             NavigationView {
-                Text("Hello 2")
+                VStack {
+                Image("followThruLogo")
+                    .resizable()
+                    .frame(width: 200, height: 200, alignment: .center)
+                Text("FollowThru")
+                    .font(.custom("Arial Bold", size: 50))
+                    .padding(.top, 50)
+                }
             }
                 .tabItem {
                     Image(systemName: "house")

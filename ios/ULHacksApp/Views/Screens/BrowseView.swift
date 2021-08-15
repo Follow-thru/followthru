@@ -17,7 +17,12 @@ struct BrowseView: View {
                         ProjectCardView(projectName: DataController().project1.name, date: DataController().project1.date, priority: DataController().project1.priority)
                             .foregroundColor(Color.black)
                     })
-                ProjectCardView(projectName: DataController().project1.name, date: DataController().project1.date, priority: DataController().project1.priority)
+                NavigationLink(
+                    destination: ProjectView(project: DataController().project2),
+                    label: {
+                        ProjectCardView(projectName: DataController().project2.name, date: DataController().project2.date, priority: DataController().project2.priority)
+                            .foregroundColor(Color.black)
+                    })
             }
                 
         }

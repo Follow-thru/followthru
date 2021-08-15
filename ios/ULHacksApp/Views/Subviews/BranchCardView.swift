@@ -51,6 +51,8 @@ struct BranchCardView: View {
         .background(Color.AppTheme.fadedGreen)
         .cornerRadius(10)
         .padding(.all, 12)
+        .clipped()
+        .shadow(color: Color.gray, radius: 10, x: 0, y: 10)
    }
 }
 
@@ -95,6 +97,8 @@ struct AboutBranchCardView: View {
         .background(Color.AppTheme.fadedGreen)
         .cornerRadius(10)
         .padding(.all, 12)
+        .clipped()
+        .shadow(color: Color.gray, radius: 10, x: 0, y: 10)
    }
 }
     
