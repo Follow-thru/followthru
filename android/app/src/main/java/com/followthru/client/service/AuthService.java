@@ -17,8 +17,8 @@ public class AuthService extends Service {
         mAuthStatusCallback = authStatusCallback;
     }
 
-    public void authenticateUser(String username, String password) {\
-        
+    public void authenticateUser(String username, String password) {
+
     }
 
     public void registerUser(String username, String password) {
