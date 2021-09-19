@@ -11,28 +11,35 @@ struct ContentView: View {
     var body: some View {
         TabView {
             NavigationView {
-                Text("Hello 1")
+                VStack {
+                Image("followThruLogo")
+                    .resizable()
+                    .frame(width: 200, height: 200, alignment: .center)
+                Text("FollowThru")
+                    .font(.custom("Arial Bold", size: 50))
+                    .padding(.top, 50)
+                }
             }
                 .tabItem {
-                    Image(systemName: "book.fill")
-                    Text("Feed")
+                    Image(systemName: "house")
+                    Text("Home")
                 }
             NavigationView {
-                Text("Hello 2")
+                BrowseView()
             }
                 .tabItem {
-                    Image(systemName: "magnifyingglass")
-                    Text("Browse")
+                    Image(systemName: "list.bullet")
+                    Text("Projects")
                 }
-            Text("Screen 3")
+            Text("Help and Advice")
                 .tabItem {
-                    Image(systemName: "square.and.arrow.up.fill")
-                    Text("Upload")
+                    Image(systemName: "questionmark.circle")
+                    Text("Help")
                 }
-            Text("Screen 4")
+            LoginView()
                 .tabItem {
                     Image(systemName: "person.fill")
-                    Text("BProfile")
+                    Text("Account")
                 }
 
         }
